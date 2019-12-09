@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
  **/
 
 @UseTestDataFrom("src/test/java/com/restapiexample/dummy/resources/testdata/employeeinfo.csv")
-@RunWith(SerenityParameterizedRunner.class)
+//@RunWith(SerenityParameterizedRunner.class)
 
 public class EmployeeDataDriven  extends TestBase {
 
@@ -28,7 +28,7 @@ public class EmployeeDataDriven  extends TestBase {
     static int age;
 
 
-    @Title("Data Driven TestCreate Multile Employee Recored usi")
+    @Title("Data Driven Test Create Multile Employee Recored using CSV file")
     @Test
     public void createMultipleEmployee()
     {
@@ -43,6 +43,5 @@ public class EmployeeDataDriven  extends TestBase {
                 .body(empPojo)
                 .post("/create")
                 .then().log().all().statusCode(200);
-
     }
 }

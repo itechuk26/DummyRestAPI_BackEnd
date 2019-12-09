@@ -14,6 +14,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Paavan\IdeaProjects\com.restapiexample.dummy\com.restapiexample.dummy\Dummy-RestApi-example\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,6 +32,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1URBucJu0CBLVK3mRxeTPymKT4x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,7 +47,7 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunManager" selected="Maven.Employee Runner">
-    <configuration name="EmployeeCurdTest.createNewStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmployeeCurdTest.createNewEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Dummy-RestApi-example" />
       <extension name="coverage">
         <pattern>
@@ -46,7 +57,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.restapiexample.dummy.employeeTest" />
       <option name="MAIN_CLASS_NAME" value="com.restapiexample.dummy.employeeTest.EmployeeCurdTest" />
-      <option name="METHOD_NAME" value="createNewStudent" />
+      <option name="METHOD_NAME" value="createNewEmployee" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,21 +182,21 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.EmployeeCurdTest.createNewStudent" />
       <item itemvalue="JUnit.EmployeeCurdTest.updateEmployeeinfo" />
       <item itemvalue="JUnit.EmployeeCurdTest.getEmployeeInfo" />
       <item itemvalue="JUnit.EmployeeCurdTest.deleteEmployeeInfo" />
       <item itemvalue="JUnit.EmployeeCurdTest.test02" />
+      <item itemvalue="JUnit.EmployeeCurdTest.createNewEmployee" />
       <item itemvalue="Maven.Employee Runner" />
       <item itemvalue="Maven.Dummy-RestApi-example" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmployeeCurdTest.updateEmployeeinfo" />
+        <item itemvalue="JUnit.EmployeeCurdTest.createNewEmployee" />
         <item itemvalue="JUnit.EmployeeCurdTest.test02" />
         <item itemvalue="JUnit.EmployeeCurdTest.deleteEmployeeInfo" />
         <item itemvalue="JUnit.EmployeeCurdTest.getEmployeeInfo" />
-        <item itemvalue="JUnit.EmployeeCurdTest.updateEmployeeinfo" />
-        <item itemvalue="JUnit.EmployeeCurdTest.createNewStudent" />
       </list>
     </recent_temporary>
   </component>
@@ -219,10 +230,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="74" key="#Updates/0.0.1536.824@0.0.1536.824" timestamp="1575384075012" />
-    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575586438714">
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575663300628">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1575586438714" />
+    <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1575663300628" />
     <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1575438920502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -235,41 +246,49 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1575390236144" />
-    <state width="1493" height="358" key="GridCell.Tab.0.bottom" timestamp="1575587560110">
+    <state width="1493" height="280" key="GridCell.Tab.0.bottom" timestamp="1575665041737">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="358" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575587560110" />
-    <state width="1493" height="358" key="GridCell.Tab.0.center" timestamp="1575587560110">
+    <state width="1493" height="280" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575665041737" />
+    <state width="1493" height="280" key="GridCell.Tab.0.center" timestamp="1575665041737">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="358" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575587560110" />
-    <state width="1493" height="358" key="GridCell.Tab.0.left" timestamp="1575587560110">
+    <state width="1493" height="280" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575665041737" />
+    <state width="1493" height="280" key="GridCell.Tab.0.left" timestamp="1575665041737">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="358" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575587560110" />
-    <state width="1493" height="358" key="GridCell.Tab.0.right" timestamp="1575587560110">
+    <state width="1493" height="280" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575665041737" />
+    <state width="1493" height="280" key="GridCell.Tab.0.right" timestamp="1575665041737">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="358" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575587560110" />
-    <state width="1493" height="252" key="GridCell.Tab.1.bottom" timestamp="1575574067119">
+    <state width="1493" height="280" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575665041737" />
+    <state width="1493" height="252" key="GridCell.Tab.1.bottom" timestamp="1575588865100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="252" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575574067119" />
-    <state width="1493" height="252" key="GridCell.Tab.1.center" timestamp="1575574067119">
+    <state width="1493" height="252" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575588865100" />
+    <state width="1493" height="252" key="GridCell.Tab.1.center" timestamp="1575588865100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="252" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575574067119" />
-    <state width="1493" height="252" key="GridCell.Tab.1.left" timestamp="1575574067119">
+    <state width="1493" height="252" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575588865100" />
+    <state width="1493" height="252" key="GridCell.Tab.1.left" timestamp="1575588865100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="252" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575574067119" />
-    <state width="1493" height="252" key="GridCell.Tab.1.right" timestamp="1575574067119">
+    <state width="1493" height="252" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575588865100" />
+    <state width="1493" height="252" key="GridCell.Tab.1.right" timestamp="1575588865100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="252" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575574067119" />
-    <state x="485" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1575384256725">
+    <state width="1493" height="252" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575588865100" />
+    <state x="485" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1575927156611">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="485" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1575384256725" />
+    <state x="485" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1575927156611" />
+    <state x="421" y="291" key="git4idea.rebase.GitRebaseDialog" timestamp="1575927670224">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="421" y="291" key="git4idea.rebase.GitRebaseDialog/0.0.1536.824@0.0.1536.824" timestamp="1575927670224" />
+    <state x="403" y="318" key="git4idea.ui.GitResetDialog" timestamp="1575927736875">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="403" y="318" key="git4idea.ui.GitResetDialog/0.0.1536.824@0.0.1536.824" timestamp="1575927736875" />
   </component>
 </project>

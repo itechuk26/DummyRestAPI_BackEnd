@@ -3,59 +3,60 @@ package com.restapiexample.dummy.employeeTest;
 import com.restapiexample.dummy.model.EmployeePojo;
 import com.restapiexample.dummy.testbase.TestBase;
 import com.restapiexample.dummy.util.TestUtil;
-import cucumber.api.java.eo.Se;
-import io.restassured.RestAssured;
+
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
+
 import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.rest.SerenityRest;
+import net.thucydides.core.annotations.Title;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import static io.restassured.RestAssured.given;
 
-import java.util.HashMap;
-
-import static net.serenitybdd.rest.SerenityRest.given;
-import static net.serenitybdd.rest.SerenityRest.rest;
-import static org.hamcrest.Matchers.hasValue;
-import static org.junit.Assert.assertThat;
 
 /**
  * Created by : Divyesh Patel
  * since : Tuesday  03/12/2019
  * Time  : 16:55
  **/
-//@RunWith(SerenityRunner.class)
+@RunWith(SerenityRunner.class)
 public class EmployeeCurdTest extends TestBase {
 
 
     static String name = "Oliver" + TestUtil.randomValue();
     static int salary = 26000;
     static int age = 29;
-    static int empId;
+    static String empId;
 
 
 
-
+@Title("Create New Employee")
     @Test
-    public void createNewStudent() {
+    public void test001() {
         EmployeePojo empPojo = new EmployeePojo();
 
         empPojo.setName(name);
         empPojo.setSalary(salary);
         empPojo.setAge(age);
 
-        SerenityRest.rest().given()
+        empId = given()
                 .contentType(ContentType.JSON)
                 .body(empPojo)
                 .post("/create")
-                .then().log().all().statusCode(200);
+                .then().statusCode(200)
+                .extract()
+                .jsonPath()
+                .get("id");
+
+        System.out.println("New Employee ID is : " +empId);
     }
 
 
-
+@Title("Update Employee Information")
     @Test
-    public void updateEmployeeinfo()
+    public void test002()
     {
 
         EmployeePojo emppojo = new EmployeePojo();
@@ -65,29 +66,38 @@ public class EmployeeCurdTest extends TestBase {
         emppojo.setSalary(salary);
         emppojo.setAge(age);
 
-        SerenityRest.rest().given()
+        String res_body = given()
                 .contentType(ContentType.JSON)
                 .body(emppojo)
-                .put("/update/16141")
-                .then().log().all().statusCode(200);
+                .put("/update/" +empId)
+                .then().statusCode(200)
+                .extract().asString();
+
+        System.out.println("Employee Record Updated " +res_body );
     }
 
+    @Title("Get Employee Information")
     @Test
-    public void getEmployeeInfo()
+    public void test003()
     {
-        SerenityRest.rest().given()
+        ValidatableResponse rep =  given()
                 .contentType(ContentType.JSON)
-                .get("/employee/1")
+                .get("/employee/"+empId)
                 .then().log().all().statusCode(200);
     }
 
+    @Title("Delete Employee Information")
     @Test
-    public void deleteEmployeeInfo()
+    public void test004()
     {
         SerenityRest.rest().given()
-        .delete("/delete/1")
+        .delete("/delete/" +empId)
                 .then().log().all().statusCode(200);
 
+        ValidatableResponse rep = given()
+                .contentType(ContentType.JSON)
+                .get("/employee/"+empId)
+                .then().statusCode(200);
 
     }
 }
